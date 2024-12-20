@@ -11,7 +11,7 @@ export class OffscreenRenderingContext extends BaseRenderingContext{
         this.context = canvas.getContext("2d", options)!
     }
 
-    static fromSize(size: VecLike, options?: CanvasRenderingContext2DSettings){
+    static fromSize(size: VecLike, options?: CanvasRenderingContext2DSettings): OffscreenRenderingContext {
         return new OffscreenRenderingContext(new OffscreenCanvas(size.x, size.y), options)
     }
 }

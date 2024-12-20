@@ -6,7 +6,7 @@ export class Path{
 
     // --- Constructors --- //
 
-    constructor(path = new Path2D()){
+    constructor(path: Path2D = new Path2D()){
         this.path = path
     }
 
@@ -14,7 +14,7 @@ export class Path{
         return new Path(new Path2D(path.path))
     }
 
-    static fromSVG(svgPath: string){
+    static fromSVG(svgPath: string): Path {
         return new Path(new Path2D(svgPath))
     }
 

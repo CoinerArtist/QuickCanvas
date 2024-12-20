@@ -118,7 +118,7 @@ export abstract class BaseRenderingContext{
     // --- Text Style --- //
 
     /** https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/font */
-    get font(){ return this.context.font }
+    get font(): string { return this.context.font }
     /** https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/font */
     set font(n: string){ this.context.font = n }
 
@@ -294,10 +294,10 @@ export abstract class BaseRenderingContext{
 
     // --- Image Smoothing --- //
 
-    get imageSmoothingEnabled(){ return this.context.imageSmoothingEnabled }
+    get imageSmoothingEnabled(): boolean { return this.context.imageSmoothingEnabled }
     set imageSmoothingEnabled(b: boolean){ this.context.imageSmoothingEnabled = b }
 
-    get imageSmoothingQuality(){ return this.context.imageSmoothingQuality }
+    get imageSmoothingQuality(): ImageSmoothingQuality { return this.context.imageSmoothingQuality }
     set imageSmoothingQuality(n: ImageSmoothingQuality){ this.context.imageSmoothingQuality = n }
 
     // --- Canvas State --- //

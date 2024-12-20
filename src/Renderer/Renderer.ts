@@ -23,11 +23,11 @@ export class Renderer extends BaseRenderer{
         return new Vec(v.x + bound.x, v.y + bound.y)
     }
 
-    screenToWorld(v: VecLike){
+    screenToWorld(v: VecLike): Vec {
         return this.canvasToWorld(this.screenToCanvas(v))
     }
 
-    worldToScreen(v: VecLike){
+    worldToScreen(v: VecLike): Vec {
         return this.canvasToScreen(this.wordlToCanvas(v))
     }
 
