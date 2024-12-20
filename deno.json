@@ -1,0 +1,12 @@
+{
+  "name": "@coin/quickcanvas",
+  "version": "1.0.0",
+  "license": "ISC",
+  "compilerOptions": {
+    "lib": ["dom", "ESNext"]
+  },
+  "imports": {
+    "@coin/vector2d": "jsr:@coin/vector2d@^1.0.4"
+  },
+  "exports": "./src/index.ts"
+}

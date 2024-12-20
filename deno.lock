@@ -1,0 +1,16 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@coin/vector2d@^1.0.4": "1.0.4"
+  },
+  "jsr": {
+    "@coin/vector2d@1.0.4": {
+      "integrity": "69149b12d27149977bb261a7d0e874f5518d8eafcfe2f25d1dffe549ff984890"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@coin/vector2d@^1.0.4"
+    ]
+  }
+}
